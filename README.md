@@ -3,7 +3,7 @@ Original paper:<br>
 [PP-PicoDet: A Better Real-Time Object Detector on Mobile Devices](https://arxiv.org/abs/2111.00902)<br>
 
 ### Introduction
-This vanilla Pytorch object-dection implementation of PP-PicoDet is simplified and modified based on the <br>[Official PaddleDetection Code](https://github.com/PaddlePaddle/PaddleDetection/blob/release/2.6/configs/picodet/README_en.md)<br>. The network is pretrained on COCO2017 and the weights can be download from <br>[Google Drive](https://drive.google.com/u/0/uc?id=15aeB6sEVKzyB20tISF38qegZ1bdJm9ZL&export=download)<br>. Inference, training and validation demos are provided. If you have any questions about the code, please feel free to ask in issues.
+This vanilla Pytorch object-dection implementation of PP-PicoDet is simplified and modified based on the [Official PaddleDetection Code](https://github.com/PaddlePaddle/PaddleDetection/blob/release/2.6/configs/picodet/README_en.md). The network is pretrained on COCO2017 and the weights can be download from [Google Drive](https://drive.google.com/u/0/uc?id=15aeB6sEVKzyB20tISF38qegZ1bdJm9ZL&export=download). Inference, training and validation demos are provided. If you have any questions about the code, please feel free to ask in issues.
 
 ## Requirements
 - Python 3.8
@@ -16,7 +16,7 @@ This vanilla Pytorch object-dection implementation of PP-PicoDet is simplified a
 - tqdm 4.65.1
 
 ## Dataset
-Please download COCO2017 under the <br>*./data*<br> directory with the following structure:
+Please download COCO2017 under the *./data* directory with the following structure:
 ```
 data/
 |-- coco/
@@ -27,7 +27,7 @@ data/
 ```
 
 ## Inference
-Please download the pretrained weights <br>([Google Drive](https://drive.google.com/u/0/uc?id=15aeB6sEVKzyB20tISF38qegZ1bdJm9ZL&export=download))<br> and put it under the <br>*./checkpoints*<br> directory.
+Please download the pretrained weights ([Google Drive](https://drive.google.com/u/0/uc?id=15aeB6sEVKzyB20tISF38qegZ1bdJm9ZL&export=download)) and put it under the *./checkpoints* directory.
 The demo images (picked from COCO2017) have already been put into *./inference/*, Simply run infer.py:
 ```shell
 python infer.py --images inference/0.jpg inference/1.jpg 
