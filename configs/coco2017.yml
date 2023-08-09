@@ -1,0 +1,25 @@
+#output directory for traning and evaluation
+output_dir: 'output'
+#pretrain weight
+pretrain_weight: 'checkpoints/picodet_coco.pth'
+
+#data directory for coco2017 dataset
+train_img_dir: 'D:/data/coco_simple/train2017'
+train_anno_dir: 'D:/data/coco_simple/annotations/instances_train2017.json'
+val_img_dir: 'D:/data/coco_simple/val2017'
+val_anno_dir: 'D:/data/coco_simple/annotations/instances_val2017.json'
+
+#training hyperparameters
+num_classes: 80
+train_batch_size: 80
+val_batch_size: 32
+num_workers: 0
+
+base_lr: 0.01
+#max training epoch for cosine decay
+max_epoch: 300
+#linear warmup step
+warmup_step: 300
+#cycleEMA parameter as described in implementation of https://arxiv.org/pdf/2111.00902.pdf
+cycle_epoch: 40
+snapshot_epoch: 10
