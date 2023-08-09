@@ -40,7 +40,7 @@ Run this line below:
 ```shell
 python train.py --device cuda --config configs/coco2017.yml --total_epoch 100
 ```
-Please note that to use the pretrained weights all the input images are scale to the size of *288*512*. This is hard-coded in the train.py file and I am too lazy to make it flexible. The same for inference and validation. Please change this and rerun trainning according to your specific needs.
+Please note that to use the pretrained weights all the input images are scale to the size of **288*512**. This is hard-coded in the train.py file and I am too lazy to make it flexible. The same for inference and validation. Please change this and rerun trainning according to your specific needs.
 
 ## Validation
 For validation, please run:
