@@ -4,10 +4,10 @@ output_dir: 'output'
 pretrain_weight: 'checkpoints/picodet_coco.pth'
 
 #data directory for coco2017 dataset
-train_img_dir: 'D:/data/coco_simple/train2017'
-train_anno_dir: 'D:/data/coco_simple/annotations/instances_train2017.json'
-val_img_dir: 'D:/data/coco_simple/val2017'
-val_anno_dir: 'D:/data/coco_simple/annotations/instances_val2017.json'
+train_img_dir: 'data/coco_simple/train2017'
+train_anno_dir: 'data/coco_simple/annotations/instances_train2017.json'
+val_img_dir: 'data/coco_simple/val2017'
+val_anno_dir: 'data/coco_simple/annotations/instances_val2017.json'
 
 #training hyperparameters
 num_classes: 80
